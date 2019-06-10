@@ -162,3 +162,8 @@ config AOD_FEATURE
 	help
         Chose this option will add AOD feature in DSI driver
 
+config FENCE_DEBUG
+	bool "Print fence name to userspace"
+	depends on DRM_MSM
+	default n
+	
